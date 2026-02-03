@@ -31,5 +31,12 @@ class InputSanitizer:
         # 4. Deterministic Clean (Remove HTML/Scripts) 
         # Standard cleaning to prevent script injection.
         text = re.sub(r'<[^>]*>', '', text)
+
+        # 5. Remove non-standard characters (Keep only letters, numbers, and basic punctuation)
+        # This removes #, %, *, ), etc.
+        text = re.sub(r'[^\w\s.,?!-]', ' ', text)
+
+        # 6. Normalize Whitespace (Collapse "  " into " ")
+        text = re.sub(r'\s+', ' ', text).strip()
         
-        return text.strip()
+        return text
