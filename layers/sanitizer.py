@@ -7,7 +7,6 @@ class InputSanitizer:
     """
     Layer 1: Input Sanitization (Pre-LLM)
     Responsibility: Canonicalization, Encoding detection, and Stripping dangerous tags.
-    References: Project Plan [cite: 4, 10, 25]
     """
     
     def sanitize(self, text: str) -> str:
@@ -28,13 +27,32 @@ class InputSanitizer:
             except:
                 pass # Not valid Base64, ignore.
 
-        # 4. Deterministic Clean (Remove HTML/Scripts) 
-        # Standard cleaning to prevent script injection.
-        text = re.sub(r'<[^>]*>', '', text)
+        # 4. Smart HTML Strip (Remove <script>, <div>, etc.)
+        # Strategy: Only remove if '<' is followed by a letter (a-z) or '/'
+        # This preserves mathematical inequalities like "1 < 2"
+        text = re.sub(r'<[a-zA-Z\/][^>]*>', '', text)
 
-        # 5. Remove non-standard characters (Keep only letters, numbers, and basic punctuation)
-        # This removes #, %, *, ), etc.
-        text = re.sub(r'[^\w\s.,?!-]', ' ', text)
+        # 5. Noise Reduction (Granular Configuration)
+        # We isolate risky symbols into groups. This makes it easy to explain 
+        # to the team which features are enabled (Math, Code, etc.).
+        
+        # Group A: Standard English (Letters, Numbers, Spaces, Basic Punctuation)
+        allowed_standard = r'\w\s.,?!:'
+        
+        # Group B: Math Operators (Enabled for Math Queries)
+        # Includes: + - * / % = < > ^
+        allowed_math = r'+=<>*/%\^\-' 
+        
+        # Group C: Coding & Logic Symbols (Enabled for Code Queries)
+        # Includes: | & ( ) [ ] { } #
+        # Added '#' for Python comments and Markdown headers.
+        allowed_code = r'|&()\[\]{}#'
+        
+        # Combine patterns into a single "Safe List"
+        # Any character NOT in this list will be replaced with a space.
+        safe_pattern = f'[^{allowed_standard}{allowed_math}{allowed_code}]'
+        
+        text = re.sub(safe_pattern, ' ', text)
 
         # 6. Normalize Whitespace (Collapse "  " into " ")
         text = re.sub(r'\s+', ' ', text).strip()
