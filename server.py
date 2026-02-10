@@ -1,12 +1,31 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List
+from fastapi import Request
+from fastapi.responses import JSONResponse
+from fastapi.exceptions import RequestValidationError
+
 
 # IMPORT THE NEW MODULE
 from layers.sanitizer import InputSanitizer
 
 # 1. Initialize the App
 app = FastAPI(title="LLM Security Wrapper", version="1.0")
+
+@app.exception_handler(RequestValidationError)
+async def validation_exception_handler(request: Request, exc: RequestValidationError):
+    # This catches the error that causes 'null'
+    return JSONResponse(
+        status_code=400,
+        content={
+            "choices": [{
+                "message": {
+                    "role": "assistant", 
+                    "content": "🛡️ BLOCK: Malicious syntax or broken request detected."
+                }
+            }]
+        }
+    )
 
 # 2. Initialize the Defense Layer
 sanitizer = InputSanitizer()
