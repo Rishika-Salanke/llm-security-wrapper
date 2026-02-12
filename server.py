@@ -3,15 +3,36 @@ from pydantic import BaseModel
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError
 from typing import List
+import httpx  # Ensure you ran: uv pip install httpx
 
 # 1. IMPORT BOTH LAYERS
 from layers.sanitizer import InputSanitizer
-from layers.security_model import InjectionClassifier # Updated import
+from layers.security_model import InjectionClassifier 
 
 # 2. Initialize the App and BOTH Defense Layers
 app = FastAPI(title="LLM Security Wrapper", version="1.0")
 sanitizer = InputSanitizer()
-guard = InjectionClassifier() # Layer 2 initialized here!
+guard = InjectionClassifier() 
+
+# 3. Ollama Configuration
+# This is the local address where your "Sword" (the LLM) is listening
+LLM_API_URL = "http://localhost:11434/v1/chat/completions"
+
+async def call_llm(messages: list):
+    """
+    Sends the message history to Ollama and gets a real response.
+    """
+    async with httpx.AsyncClient() as client:
+        response = await client.post(
+            LLM_API_URL,
+            json={
+                "model": "gemma2:2b", # This must match the model you pulled
+                "messages": messages,
+                "stream": False 
+            },
+            timeout=60.0 # Give the LLM time to think
+        )
+        return response.json()
 
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
@@ -39,7 +60,6 @@ async def chat_proxy(request: ChatRequest):
     print(f"\n[🛡️ LAYER 1 LOG] Cleaned: {clean_prompt}")
 
     # --- STEP 2: APPLY LAYER 2 (The AI Guard) ---
-    # We pass the CLEANED prompt to the AI to check for intent
     security_check = guard.is_safe(clean_prompt)
     
     print(f"[🧠 LAYER 2 LOG] Label: {security_check['label']} | Score: {security_check['score']:.4f}")
@@ -55,7 +75,11 @@ async def chat_proxy(request: ChatRequest):
             }]
         }
 
-    # Mock Response (If both layers pass)
-    return {
-        "choices": [{"message": {"role": "assistant", "content": f"Secure Proxy processed: '{clean_prompt}'"}}]
-    }
+    # --- STEP 4: CALL THE REAL LLM ---
+    # We replace the user's messy/dangerous prompt with our cleaned version
+    request.messages[-1].content = clean_prompt
+    
+    print("[🚀] Security checks passed. Calling LLM...")
+    llm_response = await call_llm(request.dict()["messages"])
+    
+    return llm_response
