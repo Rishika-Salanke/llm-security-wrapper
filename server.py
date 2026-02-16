@@ -7,11 +7,13 @@ from typing import List
 # 1. IMPORT BOTH LAYERS
 from layers.sanitizer import InputSanitizer
 from layers.security_model import InjectionClassifier # Updated import
+from layers.context_manager import ContextManager
 
 # 2. Initialize the App and BOTH Defense Layers
 app = FastAPI(title="LLM Security Wrapper", version="1.0")
 sanitizer = InputSanitizer()
 guard = InjectionClassifier() # Layer 2 initialized here!
+context_engine = ContextManager() # Layer 3 initialized here!
 
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
@@ -33,18 +35,18 @@ class ChatRequest(BaseModel):
 async def chat_proxy(request: ChatRequest):
     raw_prompt = request.messages[-1].content
     
-    # --- STEP 1: APPLY LAYER 1 (The Janitor) ---
+    # --- LAYER 1: APPLY LAYER 1 (The Janitor) ---
     clean_prompt = sanitizer.sanitize(raw_prompt)
     
     print(f"\n[🛡️ LAYER 1 LOG] Cleaned: {clean_prompt}")
 
-    # --- STEP 2: APPLY LAYER 2 (The AI Guard) ---
+    # --- LAYER 2: APPLY LAYER 2 (The AI Guard) ---
     # We pass the CLEANED prompt to the AI to check for intent
     security_check = guard.is_safe(clean_prompt)
     
     print(f"[🧠 LAYER 2 LOG] Label: {security_check['label']} | Score: {security_check['score']:.4f}")
 
-    # --- STEP 3: SECURITY DECISION ---
+    # --- SECURITY DECISION ---
     if not security_check["safe"]:
         return {
             "choices": [{
@@ -54,7 +56,17 @@ async def chat_proxy(request: ChatRequest):
                 }
             }]
         }
+    # --- LAYER 3: APPLY LAYER 3 (Context Reinforcement) ---
+    # We wrap the clean prompt inside the permanent system rules
+    reinforced_prompt = context_engine.reinforce(clean_prompt)
+    
+    # Update the request object so the LLM receives the anchored version
+    request.messages[-1].content = reinforced_prompt
 
+    # SUCCESS: CALL THE REAL LLM (Passing the anchored message)
+    print(f"[🛡️ LAYER 3 LOG] Anchoring rules to user prompt...")
+
+    
     # Mock Response (If both layers pass)
     return {
         "choices": [{"message": {"role": "assistant", "content": f"Secure Proxy processed: '{clean_prompt}'"}}]
