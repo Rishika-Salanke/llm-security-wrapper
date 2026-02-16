@@ -8,11 +8,13 @@ import httpx  # Ensure you ran: uv pip install httpx
 # 1. IMPORT BOTH LAYERS
 from layers.sanitizer import InputSanitizer
 from layers.security_model import InjectionClassifier 
+from layers.context_manager import ContextManager
 
 # 2. Initialize the App and BOTH Defense Layers
 app = FastAPI(title="LLM Security Wrapper", version="1.0")
 sanitizer = InputSanitizer()
 guard = InjectionClassifier() 
+context_engine = ContextManager()
 
 # 3. Ollama Configuration
 # This is the local address where your "Sword" (the LLM) is listening
@@ -74,10 +76,21 @@ async def chat_proxy(request: ChatRequest):
                 }
             }]
         }
+    
+    # --- STEP 4: APPLY LAYER 3 (Context Reinforcement) ---
+    # We wrap the clean prompt inside the permanent system rules
+    reinforced_prompt = context_engine.reinforce(clean_prompt)
+    
+    # Update the request object so the LLM receives the anchored version
+    request.messages[-1].content = reinforced_prompt
 
-    # --- STEP 4: CALL THE REAL LLM ---
+    # SUCCESS: CALL THE REAL LLM (Passing the anchored message)
+    print(f"[🛡️ LAYER 3 LOG] Anchoring rules to user prompt...")
+
+
+    # --- STEP 5: CALL THE REAL LLM ---
     # We replace the user's messy/dangerous prompt with our cleaned version
-    request.messages[-1].content = clean_prompt
+    request.messages[-1].content = reinforced_prompt
     
     print("[🚀] Security checks passed. Calling LLM...")
     llm_response = await call_llm(request.dict()["messages"])
