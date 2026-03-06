@@ -5,19 +5,22 @@ from fastapi.exceptions import RequestValidationError
 from typing import List
 import httpx  # Ensure you ran: uv pip install httpx
 
-# 1. IMPORT BOTH LAYERS
+# 1. IMPORT DEFENSE LAYERS
 from layers.sanitizer import InputSanitizer
-from layers.security_model import InjectionClassifier 
 from layers.context_manager import ContextManager
+# We only need PolicyEngine now, as it loads the AI Guard internally!
+from policy_engine import PolicyEngine 
+#from output_guard import OutputGuard  # This is still used inside the Policy Engine for final output checks!
 
-# 2. Initialize the App and BOTH Defense Layers
+
+# 2. Initialize the App and Defense Layers
 app = FastAPI(title="LLM Security Wrapper", version="1.0")
 sanitizer = InputSanitizer()
-guard = InjectionClassifier() 
+policy_engine = PolicyEngine("ruleFile.yaml") # Using the correct YAML file
 context_engine = ContextManager()
 
+
 # 3. Ollama Configuration
-# This is the local address where your "Sword" (the LLM) is listening
 LLM_API_URL = "http://localhost:11434/v1/chat/completions"
 
 async def call_llm(messages: list):
@@ -58,38 +61,36 @@ async def chat_proxy(request: ChatRequest):
     
     # --- STEP 1: APPLY LAYER 1 (The Janitor) ---
     clean_prompt = sanitizer.sanitize(raw_prompt)
-    
     print(f"\n[🛡️ LAYER 1 LOG] Cleaned: {clean_prompt}")
 
-    # --- STEP 2: APPLY LAYER 2 (The AI Guard) ---
-    security_check = guard.is_safe(clean_prompt)
+    # --- STEP 2: APPLY MERGED LAYER 2 (AI Guard + Policy) ---
+    # The Policy Engine automatically runs the AI Guard AND handles quarantine logging!
+    policy_decision = policy_engine.evaluate(clean_prompt)
     
-    print(f"[🧠 LAYER 2 LOG] Label: {security_check['label']} | Score: {security_check['score']:.4f}")
+    # Print the AI score to your terminal if the AI scan ran
+    if policy_decision.ai_scan:
+        scan = policy_decision.ai_scan
+        print(f"[🧠 LAYER 2 LOG] Label: {scan['label']} | Score: {scan['score']:.4f}")
 
     # --- STEP 3: SECURITY DECISION ---
-    if not security_check["safe"]:
+    # We use dot notation (.allowed and .reason) because it returns a dataclass object
+    if not policy_decision.allowed:
         return {
             "choices": [{
                 "message": {
                     "role": "assistant", 
-                    "content": f"🛡️ SECURITY BLOCK: Semantic attack detected (AI Confidence: {security_check['score']:.2f})."
+                    "content": policy_decision.reason  # Uses your teammate's custom messages!
                 }
             }]
         }
     
     # --- STEP 4: APPLY LAYER 3 (Context Reinforcement) ---
     # We wrap the clean prompt inside the permanent system rules
-    reinforced_prompt = context_engine.reinforce(clean_prompt)
-    
-    # Update the request object so the LLM receives the anchored version
-    request.messages[-1].content = reinforced_prompt
-
-    # SUCCESS: CALL THE REAL LLM (Passing the anchored message)
     print(f"[🛡️ LAYER 3 LOG] Anchoring rules to user prompt...")
+    reinforced_prompt = context_engine.reinforce(clean_prompt)
 
-
-    # --- STEP 5: CALL THE REAL LLM ---
-    # We replace the user's messy/dangerous prompt with our cleaned version
+   # --- STEP 5: CALL THE REAL LLM ---
+    # We replace the user's messy/dangerous prompt with our secured, anchored version
     request.messages[-1].content = reinforced_prompt
     
     print("[🚀] Security checks passed. Calling LLM...")

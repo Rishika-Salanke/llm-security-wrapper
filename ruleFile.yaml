@@ -1,0 +1,107 @@
+system_role:
+  immutable: true
+
+# ─────────────────────────────────────────────
+# ROLE-BASED POLICY
+# Safe roles      → pass
+# Protected roles → block
+# Unknown roles   → quarantine
+# ─────────────────────────────────────────────
+
+default_policy:
+  action: quarantine
+  notify: true
+  log_level: warn
+  message: "Role not recognized. Input has been held for review."
+
+personas:
+  safe:
+    - teacher
+    - tutor
+    - mentor
+    - professor
+    - interviewer
+    - examiner
+    - coach
+    - instructor
+    - counselor
+    - advisor
+    - guide
+    - facilitator
+    - lecturer
+    - trainer
+
+  protected:
+    - system
+    - developer
+    - admin
+    - root
+    - policy
+    - moderator
+    - hacker
+    - operator
+    - superuser
+    - sysadmin
+    - engineer
+    - architect
+    - kernel
+    - sudo
+    - god
+    - owner
+    - controller
+    - overseer
+    - authority
+
+routing:
+  tiers:
+    - tier: 1
+      name: "allowed"
+      match: safe_personas
+      action: pass
+      log_level: info
+      response: "Role recognized as safe. Request allowed."
+
+    - tier: 2
+      name: "quarantine"
+      match: unknown_role         # role not in safe or protected list
+      action: quarantine
+      log_level: warn
+      review_required: true
+      response:
+        on_quarantine: >
+          Your input has been quarantined and is pending review.
+          It will not be processed until a reviewer approves it.
+          You will be notified once a decision has been made.
+
+        on_approved: >
+          Your input has been reviewed and approved.
+          It is now being processing.
+
+        on_rejected: >
+          Your input was reviewed and rejected.
+          It did not meet the content policy requirements.
+          Please rephrase your request and try again.
+
+        on_expired: >
+          Your input was held for review but no decision was made in time.
+          It has been automatically rejected. Please try again.
+
+      notify:
+        user: true
+        reviewer: true
+        channels:
+          - log
+          - email
+        include_input_preview: false
+
+      hold_config:
+        max_hold_duration_seconds: 300
+        reviewer: human
+        fallback_action: block
+
+    - tier: 3
+      name: "blocked"
+      match: protected_personas
+      action: block
+      log_level: error
+      response: "This role is protected and cannot be assumed."
