@@ -10,7 +10,7 @@ from layers.sanitizer import InputSanitizer
 from layers.context_manager import ContextManager
 # We only need PolicyEngine now, as it loads the AI Guard internally!
 from policy_engine import PolicyEngine 
-#from output_guard import OutputGuard  # This is still used inside the Policy Engine for final output checks!
+from output_guard import OutputGuard  
 
 
 # 2. Initialize the App and Defense Layers
@@ -18,6 +18,7 @@ app = FastAPI(title="LLM Security Wrapper", version="1.0")
 sanitizer = InputSanitizer()
 policy_engine = PolicyEngine("ruleFile.yaml") # Using the correct YAML file
 context_engine = ContextManager()
+output_guard = OutputGuard(context_engine.system_anchor)
 
 
 # 3. Ollama Configuration
@@ -96,4 +97,38 @@ async def chat_proxy(request: ChatRequest):
     print("[🚀] Security checks passed. Calling LLM...")
     llm_response = await call_llm(request.dict()["messages"])
     
+    # --- EXTRACTION STEP  ---
+
+    try:
+        # We must extract the string content from the LLM JSON response
+        raw_output_text = llm_response["choices"][0]["message"]["content"]
+    except (KeyError, IndexError, TypeError):
+        # If the LLM response is malformed, we return an error instead of crashing
+        print("[⚠️] Error parsing LLM response.")
+        return llm_response
+
+    # --- STEP 6: APPLY LAYER 4.1 (The Semantic Guard) ---
+    print(f"[🔍] Running Layer 4.1 Semantic Check on: {raw_output_text[:50]}...")
+    exit_check = output_guard.scan_semantic_leak(raw_output_text)
+    
+    if not exit_check["safe"]:
+        print(f"[🚨 LAYER 4.1 BLOCK] {exit_check['reason']}")
+        return {
+            "choices": [{
+                "message": {
+                    "role": "assistant", 
+                    "content": "🛡️ SECURITY BLOCK: Response contains internal system information."
+                }
+            }]
+        }
+
+    # --- STEP 7: APPLY LAYER 4.2 (DLP Redaction) ---
+    # We redact the text instead of blocking the whole response
+    final_clean_text = output_guard.redact_sensitive_data(raw_output_text)
+    
+    # Update the final response object with the safe text
+    llm_response["choices"][0]["message"]["content"] = final_clean_text
+    
+    # SUCCESS: Return the clean response
+    print("[✅] Response is safe. Delivering to user.")
     return llm_response
