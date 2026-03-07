@@ -12,6 +12,7 @@ from logging.handlers import RotatingFileHandler
 # 1. LOAD CONFIGURATION
 load_dotenv()
 LLM_API_URL = os.getenv("BASE_LLM_URL")
+MODEL_NAME = os.getenv("MODEL_NAME")
 SEMANTIC_THRESHOLD = float(os.getenv("SEMANTIC_THRESHOLD", 0.7))
 # New: Check if the user actually wants log files
 ENABLE_LOGS = os.getenv("ENABLE_FILE_LOGGING", "True").lower() == "true"
@@ -35,8 +36,8 @@ logger = logging.getLogger("ShieldProxy")
 # 3. IMPORT & INITIALIZE DEFENSE LAYERS
 from layers.sanitizer import InputSanitizer
 from layers.context_manager import ContextManager
-from policy_engine import PolicyEngine 
-from output_guard import OutputGuard  
+from layers.policy_engine import PolicyEngine 
+from layers.output_guard import OutputGuard  
 
 app = FastAPI(title="ShieldProxy Middleware", version="1.0")
 
@@ -61,7 +62,7 @@ async def call_llm(messages: list):
         response = await client.post(
             LLM_API_URL,
             json={
-                "model": "gemma2:2b",
+                "model": MODEL_NAME,
                 "messages": messages,
                 "stream": False 
             },

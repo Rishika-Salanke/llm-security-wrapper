@@ -39,7 +39,7 @@ class PolicyEngine:
         self.ai_guard = None
         if enable_ai_layer:
             try:
-                from injection_classifier import InjectionClassifier
+                from .injection_classifier import InjectionClassifier
                 self.ai_guard = InjectionClassifier()
             except Exception as e:
                 print(f"[⚠️  LAYER 2] Could not load AI model: {e}")

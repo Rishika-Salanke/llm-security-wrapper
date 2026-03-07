@@ -1,0 +1,60 @@
+2026-03-07 11:27:13,895 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 11:27:13,900 [WARNING] ShieldProxy: ❌ BLOCKED: Your input has been quarantined and is pending review. It will not be processed until a reviewer approves it. You will be notified once a decision has been made.
+2026-03-07 11:31:15,425 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 11:31:15,432 [WARNING] ShieldProxy: ❌ BLOCKED: Your input has been quarantined and is pending review. It will not be processed until a reviewer approves it. You will be notified once a decision has been made.
+2026-03-07 13:47:01,695 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 13:47:01,771 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 13:47:02,476 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 13:47:02,698 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 13:47:03,721 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 13:47:28,523 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 13:47:29,081 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9995
+2026-03-07 13:47:29,081 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.95%)
+2026-03-07 14:21:19,011 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 14:21:19,024 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 14:21:19,471 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 14:21:19,691 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 14:21:20,463 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 14:21:23,567 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 14:21:23,880 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9995
+2026-03-07 14:21:23,880 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.95%)
+2026-03-07 14:21:49,318 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 14:21:49,373 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-07 14:21:49,389 [INFO] ShieldProxy: 🚀 Forwarding request to: http://localhost:11434/v1/chat/completions
+2026-03-07 14:21:54,248 [INFO] ShieldProxy: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 14:21:54,249 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-07 14:24:03,166 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 14:24:03,222 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-07 14:24:03,239 [INFO] ShieldProxy: 🚀 Forwarding request to: http://localhost:11434/v1/chat/completions
+2026-03-07 14:24:05,403 [INFO] ShieldProxy: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 14:24:05,404 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-07 14:24:38,377 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 14:24:38,430 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9995
+2026-03-07 14:24:38,430 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.95%)
+2026-03-07 14:26:10,551 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 14:26:10,620 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-07 14:26:10,636 [INFO] ShieldProxy: 🚀 Forwarding request to: http://localhost:11434/v1/chat/completions
+2026-03-07 14:26:17,999 [INFO] ShieldProxy: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 14:26:18,000 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+#####
+
+2026-03-07 14:27:07,990 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 14:27:08,063 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-07 14:27:08,080 [INFO] ShieldProxy: 🚀 Forwarding request to: http://localhost:11434/v1/chat/completions
+2026-03-07 14:27:11,768 [INFO] ShieldProxy: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 14:27:11,769 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-07 14:28:41,805 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 14:28:41,883 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-07 14:28:41,901 [INFO] ShieldProxy: 🚀 Forwarding request to: http://localhost:11434/v1/chat/completions
+2026-03-07 14:28:46,817 [INFO] ShieldProxy: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 14:28:46,818 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-07 14:29:35,275 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 14:29:35,292 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 14:29:35,679 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 14:29:35,908 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 14:29:36,672 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 14:29:48,706 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 14:29:48,811 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-07 14:29:48,828 [INFO] ShieldProxy: 🚀 Forwarding request to: http://localhost:11434/v1/chat/completions
+2026-03-07 14:29:50,926 [INFO] ShieldProxy: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 14:29:50,927 [INFO] ShieldProxy: 🟢 Final Response Delivered.
