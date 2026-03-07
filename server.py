@@ -14,7 +14,7 @@ load_dotenv()
 LLM_API_URL = os.getenv("BASE_LLM_URL")
 MODEL_NAME = os.getenv("MODEL_NAME")
 SEMANTIC_THRESHOLD = float(os.getenv("SEMANTIC_THRESHOLD", 0.7))
-# New: Check if the user actually wants log files
+API_KEY = os.getenv("GROQ_API_KEY")
 ENABLE_LOGS = os.getenv("ENABLE_FILE_LOGGING", "True").lower() == "true"
 
 # 2. INITIALIZE LOGGING (OPTIONAL FILE WRITING)
@@ -58,9 +58,14 @@ class ChatRequest(BaseModel):
 # 5. CORE LLM FORWARDER
 async def call_llm(messages: list):
     async with httpx.AsyncClient() as client:
+        headers = {
+            "Authorization": f"Bearer {API_KEY}",
+            "Content-Type": "application/json"
+        }
         logger.info(f"🚀 Forwarding request to: {LLM_API_URL}")
         response = await client.post(
             LLM_API_URL,
+            headers=headers,
             json={
                 "model": MODEL_NAME,
                 "messages": messages,
