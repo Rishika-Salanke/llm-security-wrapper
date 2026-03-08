@@ -56,13 +56,20 @@ class ChatRequest(BaseModel):
     messages: List[Message]
 
 # 5. CORE LLM FORWARDER
-async def call_llm(messages: list):
+async def call_llm(messages: list, target_url: str = None, target_model: str = None, target_key: str = None):
+    # 1. Use the UI inputs if they exist, otherwise fallback to the .env file
+    LLM_API_URL = target_url or os.getenv("BASE_LLM_URL")
+    MODEL_NAME = target_model or os.getenv("MODEL_NAME")
+    API_KEY = target_key or os.getenv("GROQ_API_KEY")
+
+    headers = {
+        "Authorization": f"Bearer {API_KEY}",
+        "Content-Type": "application/json"
+    }
+    
+    logger.info(f"🚀 Forwarding request to: {LLM_API_URL} | Model: {MODEL_NAME}")
+    
     async with httpx.AsyncClient() as client:
-        headers = {
-            "Authorization": f"Bearer {API_KEY}",
-            "Content-Type": "application/json"
-        }
-        logger.info(f"🚀 Forwarding request to: {LLM_API_URL}")
         response = await client.post(
             LLM_API_URL,
             headers=headers,
@@ -86,35 +93,55 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 
 # 7. THE PROXY ENDPOINT
 @app.post("/v1/chat/completions")
-async def chat_proxy(request: ChatRequest):
+async def chat_proxy(request: ChatRequest, req: Request): # <-- NEW: Added req: Request to read headers
     raw_prompt = request.messages[-1].content
+    
+    # --- NEW: EXTRACT CUSTOM HEADERS FROM THE UI ---
+    custom_url = req.headers.get("X-Target-Url")
+    custom_model = req.headers.get("X-Target-Model")
+    custom_key = req.headers.get("X-Target-Key")
     
     # --- LAYER 1: SANITIZATION ---
     clean_prompt = sanitizer.sanitize(raw_prompt)
     logger.info("✅ Layer 1: Sanitized.")
 
-    # --- LAYER 2: AI POLICY SCAN ---
-    policy_decision = policy_engine.evaluate(clean_prompt)
-    if policy_decision.ai_scan:
-        scan = policy_decision.ai_scan
-        logger.info(f"🧠 Layer 2 AI Scan: Label={scan['label']}, Score={scan['score']:.4f}")
-
-    if not policy_decision.allowed:
-        logger.warning(f"❌ BLOCKED: {policy_decision.reason}")
-        return {"choices": [{"message": {"role": "assistant", "content": policy_decision.reason}}]}
+    # Convert to lowercase and strip spaces for checking
+    check_text = clean_prompt.lower().strip()
+    safe_greetings = ["hi", "hlo", "hello", "hey", "test", "ok", "yes", "no"]
     
+    # If it's a known greeting OR under 4 characters, skip the heavy AI scan
+    if check_text in safe_greetings or len(check_text) < 4:
+        logger.info("⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.")
+    else:
+        # --- LAYER 2: AI POLICY SCAN ---
+        policy_decision = policy_engine.evaluate(clean_prompt)
+        if getattr(policy_decision, "ai_scan", None):
+            scan = policy_decision.ai_scan
+            logger.info(f"🧠 Layer 2 AI Scan: Label={scan['label']}, Score={scan['score']:.4f}")
+
+        if not policy_decision.allowed:
+            logger.warning(f"❌ BLOCKED: {policy_decision.reason}")
+            return {"choices": [{"message": {"role": "assistant", "content": f"🛡️ AI Guard blocked: {policy_decision.reason}"}}]}
+        
     # --- LAYER 3: CONTEXT ANCHORING ---
     reinforced_prompt = context_engine.reinforce(clean_prompt)
 
     # --- LLM EXECUTION ---
     request.messages[-1].content = reinforced_prompt
-    llm_response = await call_llm(request.dict()["messages"])
+    
+    # --- NEW: PASS CUSTOM HEADERS TO THE LLM CALL ---
+    llm_response = await call_llm(
+        request.dict()["messages"],
+        target_url=custom_url,
+        target_model=custom_model,
+        target_key=custom_key
+    )
     
     # --- OUTPUT EXTRACTION ---
     try:
         raw_output_text = llm_response["choices"][0]["message"]["content"]
     except (KeyError, IndexError, TypeError):
-        logger.error("⚠️ LLM Parse Error.")
+        logger.error(f"⚠️ LLM Parse Error. Raw response: {llm_response}")
         return llm_response
 
     # --- LAYER 4.1: SEMANTIC LEAK GUARD ---
