@@ -93,10 +93,10 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 
 # 7. THE PROXY ENDPOINT
 @app.post("/v1/chat/completions")
-async def chat_proxy(request: ChatRequest, req: Request): # <-- NEW: Added req: Request to read headers
+async def chat_proxy(request: ChatRequest, req: Request): # <--  Added req: Request to read headers
     raw_prompt = request.messages[-1].content
     
-    # --- NEW: EXTRACT CUSTOM HEADERS FROM THE UI ---
+    # --- EXTRACT CUSTOM HEADERS FROM THE UI ---
     custom_url = req.headers.get("X-Target-Url")
     custom_model = req.headers.get("X-Target-Model")
     custom_key = req.headers.get("X-Target-Key")
