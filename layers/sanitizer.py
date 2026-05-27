@@ -33,7 +33,7 @@ class InputSanitizer:
             if keyword in text.lower():
                 text = text.replace(keyword, f"[RESTRICTED_KEYWORD: {keyword.strip('(')}] ")
 
-        # 4. NEW: Structural Neutralizer (The "No-Delete" HTML Filter)
+        # 4. Structural Neutralizer (The "No-Delete" HTML Filter)
         # Neutralize START tags: <script> -> [TAG_START: script]
         text = re.sub(r'<([a-zA-Z0-9!]+)([^>]*)>', r' [TAG_START: \1] ', text)
         # Neutralize END tags: </script> -> [TAG_END: script]

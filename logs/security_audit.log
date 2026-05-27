@@ -58,3 +58,734 @@
 2026-03-07 14:29:48,828 [INFO] ShieldProxy: 🚀 Forwarding request to: http://localhost:11434/v1/chat/completions
 2026-03-07 14:29:50,926 [INFO] ShieldProxy: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
 2026-03-07 14:29:50,927 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-07 15:06:22,656 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:06:22,670 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:06:23,039 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:06:23,262 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:06:23,968 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:08:08,941 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:08:08,941 [WARNING] ShieldProxy: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-07 15:08:08,954 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:08:09,326 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:08:09,546 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:08:10,250 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:08:19,930 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:08:19,944 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:08:20,318 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:08:20,535 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:08:21,318 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:08:36,594 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:08:36,609 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:08:36,987 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:08:37,209 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:08:37,952 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:08:44,754 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:08:44,768 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:08:45,139 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:08:45,365 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:08:46,109 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:08:50,029 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:08:50,041 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:08:50,424 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:08:50,640 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:08:51,444 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:08:55,760 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:08:55,774 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:08:56,141 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:08:56,359 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:08:57,094 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:09:00,940 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:09:00,955 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:09:01,342 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:09:01,562 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:09:02,282 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:09:06,293 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:09:06,307 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:09:06,680 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:09:06,951 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:09:07,664 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:09:11,584 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:09:11,599 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:09:11,989 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:09:12,206 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:09:12,921 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:09:18,736 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:09:18,749 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:09:19,124 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:09:19,343 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:09:20,099 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:09:32,147 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 15:09:32,227 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-07 15:09:32,247 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions
+2026-03-07 15:09:32,421 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 15:09:32,422 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-07 15:18:51,834 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:18:51,850 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:18:52,230 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:18:52,448 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:18:53,153 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:21:14,360 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:21:14,373 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:21:14,752 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:21:14,967 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:21:15,710 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:22:09,516 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 15:22:09,642 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-07 15:22:09,642 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-07 15:40:27,512 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-07 15:40:27,513 [WARNING] ShieldProxy: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-07 15:40:27,527 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-07 15:40:28,146 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-07 15:40:28,388 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-07 15:40:29,467 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-07 15:41:02,140 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 15:41:02,404 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-07 15:41:02,441 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions
+2026-03-07 15:41:03,035 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 15:41:03,037 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-07 15:41:17,097 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-07 15:41:17,314 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-07 15:41:17,348 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions
+2026-03-07 15:41:18,221 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 15:41:18,223 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-08 12:11:52,450 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-08 12:11:52,475 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-08 12:11:53,210 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-08 12:11:53,450 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-08 12:11:54,504 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-08 12:12:57,511 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-08 12:12:57,512 [WARNING] ShieldProxy: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-08 12:12:57,535 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-08 12:12:58,142 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-08 12:12:58,385 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-08 12:12:59,478 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-08 12:34:14,491 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:34:15,091 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9935
+2026-03-08 12:34:15,091 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.35%)
+2026-03-08 12:34:26,518 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:34:26,677 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-08 12:34:26,678 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-08 12:35:15,676 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-08 12:35:15,927 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-08 12:35:16,976 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-08 12:35:44,049 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:35:44,291 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-08 12:35:44,291 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-08 12:37:49,818 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-08 12:37:49,838 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-08 12:37:50,496 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-08 12:37:50,755 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-08 12:37:51,906 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-08 12:38:14,802 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:38:15,046 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-08 12:38:15,046 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-08 12:38:15,251 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-08 12:38:15,253 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-08 12:38:33,208 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:38:33,362 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9935
+2026-03-08 12:38:33,362 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.35%)
+2026-03-08 12:38:37,543 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:38:37,696 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-08 12:38:37,697 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-08 12:38:37,861 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-03-08 12:38:37,862 [ERROR] ShieldProxy: ⚠️ LLM Parse Error. Raw response: {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-08 12:39:00,016 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:39:00,171 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9935
+2026-03-08 12:39:00,171 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.35%)
+2026-03-08 12:39:36,977 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:39:37,208 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-08 12:39:37,209 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-08 12:40:04,902 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:40:05,132 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-08 12:40:05,133 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-08 12:40:05,549 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-08 12:40:05,553 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-08 12:40:09,981 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:40:10,220 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-08 12:40:10,221 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-08 12:40:10,624 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-08 12:40:10,626 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-08 12:41:59,466 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-08 12:41:59,490 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-08 12:42:00,082 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-08 12:42:00,318 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-08 12:42:01,406 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-08 12:43:22,956 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-08 12:43:22,974 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-08 12:43:23,622 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-08 12:43:23,869 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-08 12:43:24,883 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-08 12:43:43,659 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:43:43,659 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-03-08 12:43:43,898 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9935
+2026-03-08 12:43:43,898 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.35%)
+2026-03-08 12:44:39,853 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-08 12:44:39,869 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-08 12:44:40,464 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-08 12:44:40,724 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-08 12:44:41,722 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-08 12:44:48,749 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-08 12:44:48,770 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-08 12:44:49,373 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-08 12:44:49,607 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-08 12:44:50,893 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-08 12:44:57,523 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:44:57,524 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-03-08 12:44:57,524 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-08 12:44:57,807 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-08 12:44:57,812 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-08 12:45:10,518 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:45:10,764 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9915
+2026-03-08 12:45:10,764 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.15%)
+2026-03-08 12:59:27,977 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 12:59:27,978 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-03-08 12:59:27,978 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-08 12:59:28,253 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-08 12:59:28,256 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-08 13:02:28,057 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 13:02:28,058 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-03-08 13:02:28,058 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-08 13:02:28,297 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-08 13:02:28,300 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+
+
+2026-03-08 13:14:22,048 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-08 13:14:22,049 [WARNING] ShieldProxy: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-08 13:14:22,065 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-08 13:14:22,667 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-08 13:14:22,911 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-08 13:14:23,920 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-08 13:15:28,660 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 13:15:28,661 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-03-08 13:15:28,661 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-08 13:15:28,922 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-08 13:15:28,925 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-08 13:18:25,434 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-08 13:18:25,965 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-08 13:18:25,965 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: openai/gpt-oss-20b
+2026-03-08 13:18:26,225 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-08 13:18:26,227 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+
+
+
+2026-03-09 05:43:43,217 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-09 05:43:43,316 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-09 05:43:44,130 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-09 05:43:44,485 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-09 05:43:45,678 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-09 05:55:43,880 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-09 05:55:43,881 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-03-09 05:55:43,881 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-09 05:55:44,296 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 05:55:44,299 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-09 05:56:37,402 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-09 05:56:37,998 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-09 05:56:37,998 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-10 14:48:08,907 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-10 14:48:08,923 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-10 14:48:09,406 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-10 14:48:09,688 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-10 14:48:10,515 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-10 14:52:38,578 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 14:52:38,906 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-10 14:52:38,907 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-10 14:55:30,802 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 14:55:30,892 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-10 14:55:30,892 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-10 14:56:28,963 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 14:56:29,038 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9783
+2026-03-10 14:56:29,039 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 97.83%)
+2026-03-10 14:57:36,237 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 14:57:36,329 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-10 14:57:36,329 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-10 14:58:30,702 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 14:58:32,424 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9999
+2026-03-10 14:58:32,424 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.99%)
+2026-03-10 14:58:48,457 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 14:58:48,534 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9999
+2026-03-10 14:58:48,534 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.99%)
+2026-03-10 14:59:21,434 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 14:59:21,511 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 14:59:21,512 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 14:59:22,049 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 14:59:22,051 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 15:00:53,405 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:00:53,489 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-10 15:00:53,490 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-10 15:01:35,869 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:01:35,944 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 15:01:35,945 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 15:01:36,330 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 15:01:36,331 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 15:02:50,797 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:02:50,877 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-10 15:02:50,878 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-10 15:03:51,156 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:03:51,238 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-10 15:03:51,238 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-10 15:04:44,014 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:04:44,096 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-10 15:04:44,096 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-10 15:06:35,022 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:06:35,120 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 15:06:35,120 [WARNING] ShieldProxy: ❌ BLOCKED: Your input has been quarantined and is pending review. It will not be processed until a reviewer approves it. You will be notified once a decision has been made.
+2026-03-10 15:08:11,165 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:08:11,241 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 15:08:11,242 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 15:08:11,713 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 15:08:11,714 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 15:09:24,327 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:09:24,414 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 15:09:24,414 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 15:09:25,348 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 15:09:25,350 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 15:11:06,660 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:11:06,755 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 15:11:06,756 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 15:11:07,518 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 15:11:07,519 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 15:12:28,066 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:12:28,143 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 15:12:28,143 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 15:12:28,616 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 15:12:28,617 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 15:13:30,001 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:13:30,100 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 15:13:30,100 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 15:13:30,340 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 15:13:30,341 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 15:14:56,115 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:14:56,192 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9999
+2026-03-10 15:14:56,193 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.99%)
+2026-03-10 15:16:14,714 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 15:16:14,810 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 15:16:14,810 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 15:16:15,502 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 15:16:15,504 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:10:47,481 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:10:47,693 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:10:47,693 [WARNING] ShieldProxy: ❌ BLOCKED: Your input has been quarantined and is pending review. It will not be processed until a reviewer approves it. You will be notified once a decision has been made.
+2026-03-10 16:11:41,598 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:11:41,798 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:11:41,799 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:11:42,517 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:11:42,520 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:12:57,109 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:12:57,329 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:12:57,330 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:12:57,743 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:12:57,746 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:14:35,177 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:14:35,438 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:14:35,439 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:14:35,753 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:14:35,755 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:16:14,256 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:16:14,464 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:16:14,466 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:16:15,224 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:16:15,227 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:17:09,497 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:17:09,670 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:17:09,670 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:17:10,228 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:17:10,230 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:19:04,549 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:19:04,755 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:19:04,755 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:19:05,208 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:19:05,210 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:19:18,249 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:19:18,435 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:19:18,436 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:19:18,716 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:19:18,717 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:20:16,515 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:20:16,711 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:20:16,712 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:20:17,665 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:20:17,668 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:22:12,088 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:22:12,297 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:22:12,298 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:22:13,027 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:22:13,031 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:23:42,095 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:23:42,292 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:23:42,293 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:23:43,086 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:23:43,088 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:24:47,994 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:24:48,180 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:24:48,182 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:24:48,540 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:24:48,543 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:25:54,454 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:25:54,642 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:25:54,643 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:25:55,083 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:25:55,086 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:26:36,713 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:26:36,898 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:26:36,898 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:26:37,243 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:26:37,245 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:32:16,986 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:32:17,184 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:32:17,185 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:32:17,494 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:32:17,497 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:32:30,278 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:32:30,489 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:32:30,490 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:32:31,102 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:32:31,104 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:32:47,904 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:32:48,114 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:32:48,114 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:32:49,112 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:32:49,116 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:33:18,049 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:33:18,265 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:33:18,265 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:33:19,369 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:33:19,375 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:33:59,123 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:33:59,325 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:33:59,326 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:34:00,576 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:34:00,580 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:36:42,357 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:36:42,358 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-03-10 16:36:42,358 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:36:42,617 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:36:42,620 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:36:51,350 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:36:51,571 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:36:51,571 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:36:51,961 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:36:51,963 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:37:03,677 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:37:03,863 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9999
+2026-03-10 16:37:03,863 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.99%)
+2026-03-10 16:37:29,348 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:37:29,527 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:37:29,528 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:37:29,851 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:37:29,853 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:39:30,349 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:39:30,505 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:39:30,505 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:39:30,868 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:39:30,870 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:39:46,933 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:39:47,100 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:39:47,101 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:39:47,998 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:39:48,000 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:39:58,424 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:39:58,591 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:39:58,592 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:39:59,364 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:39:59,366 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:40:16,509 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:40:16,688 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:40:16,689 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:40:16,978 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:40:16,980 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:41:05,583 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:41:05,743 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:41:05,743 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:41:06,412 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:41:06,414 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:41:52,570 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:41:52,744 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:41:52,745 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:41:53,547 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:41:53,880 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:42:29,929 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:42:30,119 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:42:30,119 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:42:31,127 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:42:31,130 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:43:42,876 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:43:43,028 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:43:43,028 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:43:43,769 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:43:43,772 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:44:15,440 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:44:15,608 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:44:15,609 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:44:16,052 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:44:16,054 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:44:46,733 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:44:46,910 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:44:46,910 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:44:48,255 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:44:48,257 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:45:17,124 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:45:17,308 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:45:17,309 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:45:17,924 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:45:17,926 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:45:43,956 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:45:44,115 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:45:44,116 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:45:47,296 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:45:47,299 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-10 16:45:59,796 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-10 16:45:59,957 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-10 16:45:59,957 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-10 16:46:00,573 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 16:46:00,575 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-12 14:19:23,114 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 14:19:23,133 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-12 14:19:23,864 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-12 14:19:24,114 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-12 14:19:25,149 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+
+
+
+2026-03-12 14:28:47,843 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-12 14:28:47,843 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-03-12 14:28:47,844 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-12 14:28:48,075 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 14:28:48,077 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-12 14:34:27,241 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-12 14:34:27,830 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9879
+2026-03-12 14:34:27,830 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 98.79%)
+2026-03-12 14:43:18,228 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-12 14:43:18,533 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-12 14:43:18,534 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-12 14:43:18,773 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 14:43:18,775 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-12 14:48:37,183 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-12 14:48:37,343 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-12 14:48:37,343 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-12 14:48:37,733 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 14:48:37,735 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-12 14:50:50,730 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-12 14:50:50,888 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-12 14:50:50,888 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-12 14:50:51,343 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 14:50:51,345 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-12 14:53:03,996 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-12 14:53:04,163 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-03-12 14:53:04,163 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-03-12 14:53:24,468 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-12 14:53:24,663 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-12 14:53:24,664 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-12 14:53:25,356 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 14:53:25,358 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-13 06:55:04,725 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-13 06:55:04,819 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-03-13 06:55:05,693 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-13 06:55:06,028 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-13 06:55:07,239 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-03-13 06:57:43,838 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-13 06:57:43,839 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-03-13 06:57:43,839 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-13 06:57:44,196 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 06:57:44,199 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-13 06:59:13,190 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-13 06:59:13,779 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-13 06:59:13,780 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-13 06:59:14,786 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 06:59:14,788 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-03-13 06:59:30,821 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-03-13 06:59:31,038 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-03-13 06:59:31,039 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-03-13 06:59:31,604 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-13 06:59:31,607 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-01 15:01:59,707 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 15:01:59,728 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-04-01 15:02:00,423 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-01 15:02:00,676 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-01 15:02:01,657 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-04-01 15:02:54,949 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-01 15:02:54,949 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-04-01 15:02:54,949 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-04-01 15:02:55,149 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-01 15:02:55,149 [ERROR] ShieldProxy: ⚠️ LLM Parse Error. Raw response: {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-04-01 15:04:17,851 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-01 15:04:17,851 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-04-01 15:04:17,852 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-04-01 15:04:18,093 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-01 15:04:18,095 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-01 15:06:04,282 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-01 15:06:04,810 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-04-01 15:06:04,811 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-04-01 15:09:05,288 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 15:09:05,307 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-04-01 15:09:05,876 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-01 15:09:06,134 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-01 15:09:07,129 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-04-01 15:17:05,620 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-01 15:17:05,843 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-04-01 15:17:05,843 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.3-70b-versatile
+2026-04-01 15:17:06,475 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-01 15:17:06,479 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-01 15:51:25,489 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 15:51:25,515 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-04-01 15:51:26,219 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-01 15:51:26,501 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-01 15:51:27,842 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-04-01 16:00:34,098 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-01 16:00:34,369 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-04-01 16:00:34,370 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-04-01 16:00:34,920 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-01 16:00:34,922 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-01 16:08:12,459 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-01 16:08:12,460 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-04-01 16:08:12,460 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: qwen/qwen3-32b
+2026-04-01 16:08:13,013 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-01 16:08:13,015 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-01 16:08:57,738 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-01 16:08:57,739 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-04-01 16:08:57,739 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: openai/gpt-oss-20b
+2026-04-01 16:08:57,999 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-01 16:08:58,001 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-02 05:43:57,749 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-04-02 05:50:37,841 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-02 05:50:37,842 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-04-02 05:50:37,842 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-04-02 05:50:38,220 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-02 05:50:38,223 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-02 05:52:01,956 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-02 05:52:02,514 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9851
+2026-04-02 05:52:02,514 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 98.51%)
+2026-04-02 05:56:22,545 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-02 05:56:22,706 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-04-02 05:56:22,707 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: openai/gpt-oss-20b
+2026-04-02 05:56:23,240 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-02 05:56:23,242 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-02 06:30:41,422 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-04-02 06:31:37,315 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-02 06:31:37,943 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-04-02 06:31:37,943 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-04-02 06:31:40,089 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-02 06:31:40,093 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-02 06:32:24,456 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-02 06:32:24,625 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-04-02 06:32:24,626 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-04-02 06:32:25,614 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-02 06:32:25,617 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-02 06:37:10,482 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-02 06:37:10,697 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-04-02 06:37:10,697 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-04-02 06:37:11,260 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-02 06:37:11,262 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-04-02 06:52:59,847 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-04-02 06:53:00,008 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9941
+2026-04-02 06:53:00,008 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.41%)
+2026-05-13 12:34:50,757 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-13 12:34:50,759 [WARNING] ShieldProxy: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-13 12:34:50,773 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-05-13 12:34:51,472 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-13 12:34:51,719 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-13 12:34:52,764 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-05-13 12:42:07,527 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-13 12:42:07,527 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-05-13 12:42:07,527 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-05-13 12:42:07,872 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 12:42:07,874 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-13 12:43:52,555 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-13 12:43:53,154 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=1.0000
+2026-05-13 12:43:53,154 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 100.00%)
+2026-05-13 12:47:35,872 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-13 12:47:36,107 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9800
+2026-05-13 12:47:36,108 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 98.00%)
+2026-05-13 12:52:51,216 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-13 12:52:51,232 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-05-13 12:52:51,926 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-13 12:52:52,168 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-13 12:52:53,242 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-05-13 12:53:57,625 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-13 12:53:57,626 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-05-13 12:53:57,626 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-05-13 12:53:57,889 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 12:53:57,892 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-13 13:21:28,444 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-13 13:21:28,463 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-05-13 13:21:29,242 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-13 13:21:29,507 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-13 13:21:30,603 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-05-13 13:22:22,857 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-13 13:22:23,494 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-05-13 13:22:23,494 [WARNING] ShieldProxy: ❌ BLOCKED: Your input has been quarantined and is pending review. It will not be processed until a reviewer approves it. You will be notified once a decision has been made.
+2026-05-14 05:11:37,982 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 05:11:37,984 [WARNING] ShieldProxy: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 05:11:38,024 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-05-14 05:11:38,886 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 05:11:40,281 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 05:11:41,454 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-05-14 05:13:19,962 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 05:13:19,962 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-05-14 05:13:19,963 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-05-14 05:13:20,450 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,452 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-14 05:14:59,486 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 05:15:00,051 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9800
+2026-05-14 05:15:00,052 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 98.00%)
+2026-05-14 05:15:31,491 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 05:15:31,700 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-05-14 05:15:31,700 [WARNING] ShieldProxy: ❌ BLOCKED: Your input has been quarantined and is pending review. It will not be processed until a reviewer approves it. You will be notified once a decision has been made.
+2026-05-14 06:35:02,877 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/protectai/deberta-v3-base-prompt-injection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 06:35:02,934 [INFO] ShieldProxy: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/protectai/deberta-v3-base-prompt-injection/447ec1ac62f47c9be5a0bc65e8d52569b37315a6/config.json "HTTP/1.1 200 OK"
+2026-05-14 06:35:04,176 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 06:35:04,822 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 06:35:06,081 [INFO] ShieldProxy: HTTP Request: GET https://huggingface.co/api/models/protectai/deberta-v3-base-prompt-injection "HTTP/1.1 200 OK"
+2026-05-14 06:39:44,890 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:39:44,890 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-05-14 06:39:44,891 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-05-14 06:39:45,241 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 06:39:45,243 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-14 06:40:36,733 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:40:36,734 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-05-14 06:40:36,734 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: openai/gpt-oss-20b
+2026-05-14 06:40:37,244 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 06:40:37,246 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-14 06:42:23,038 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:42:23,038 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-05-14 06:42:23,038 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: openai/gpt-oss-20b
+2026-05-14 06:42:23,695 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 06:42:23,697 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-14 06:42:57,970 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:42:57,970 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-05-14 06:42:57,970 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-05-14 06:42:58,345 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 06:42:58,347 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-14 06:51:04,664 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:51:04,665 [INFO] ShieldProxy: ⏩ Fast-Pass: Short greeting detected. Skipping Layer 2 scan.
+2026-05-14 06:51:04,665 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-05-14 06:51:05,046 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 06:51:05,048 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-14 06:52:10,395 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:52:10,968 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9800
+2026-05-14 06:52:10,968 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 98.00%)
+2026-05-14 06:52:52,869 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:52:53,082 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-05-14 06:52:53,082 [WARNING] ShieldProxy: ❌ BLOCKED: Your input has been quarantined and is pending review. It will not be processed until a reviewer approves it. You will be notified once a decision has been made.
+2026-05-14 06:56:57,762 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:56:57,956 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-05-14 06:56:57,957 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-05-14 06:56:58,536 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 06:56:58,539 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-14 06:57:13,379 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:57:13,540 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-05-14 06:57:13,540 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-05-14 06:57:14,056 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 06:57:14,058 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-14 06:57:34,983 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:57:35,145 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-05-14 06:57:35,145 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-05-14 06:57:36,068 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 06:57:36,072 [INFO] ShieldProxy: 🟢 Final Response Delivered.
+2026-05-14 06:57:49,968 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 06:57:50,137 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=INJECTION, Score=0.9939
+2026-05-14 06:57:50,138 [WARNING] ShieldProxy: ❌ BLOCKED: 🛡️ AI Guard blocked: INJECTION (confidence: 99.39%)
+2026-05-14 07:03:43,921 [INFO] ShieldProxy: ✅ Layer 1: Sanitized.
+2026-05-14 07:03:44,147 [INFO] ShieldProxy: 🧠 Layer 2 AI Scan: Label=SAFE, Score=1.0000
+2026-05-14 07:03:44,147 [INFO] ShieldProxy: 🚀 Forwarding request to: https://api.groq.com/openai/v1/chat/completions | Model: llama-3.1-8b-instant
+2026-05-14 07:03:45,608 [INFO] ShieldProxy: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:03:45,610 [INFO] ShieldProxy: 🟢 Final Response Delivered.
